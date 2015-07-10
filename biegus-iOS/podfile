@@ -1,0 +1,15 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+target 'biegus-iOS' do
+pod 'Parse', '1.6.3'
+pod 'ParseUI', '1.1.0'
+pod 'ParseFacebookUtils'
+pod 'MBProgressHUD'
+pod 'SWRevealViewController'
+end
+
+target 'biegus-iOSTests' do
+
+end
+

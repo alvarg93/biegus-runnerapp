@@ -1,0 +1,37 @@
+PODS:
+  - Bolts (1.1.5):
+    - Bolts/AppLinks (= 1.1.5)
+    - Bolts/Tasks (= 1.1.5)
+  - Bolts/AppLinks (1.1.5):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.1.5)
+  - Facebook-iOS-SDK (3.23.2):
+    - Bolts (~> 1.0)
+  - MBProgressHUD (0.9.1)
+  - Parse (1.6.3):
+    - Bolts (~> 1.1)
+  - ParseFacebookUtils (1.6.3):
+    - Facebook-iOS-SDK (~> 3.20)
+    - Parse (~> 1.6.3)
+  - ParseUI (1.1.0):
+    - Parse (~> 1.6)
+    - ParseFacebookUtils (~> 1.6)
+  - SWRevealViewController (2.3.0)
+
+DEPENDENCIES:
+  - MBProgressHUD
+  - Parse (= 1.6.3)
+  - ParseFacebookUtils
+  - ParseUI (= 1.1.0)
+  - SWRevealViewController
+
+SPEC CHECKSUMS:
+  Bolts: aac24961496d504aa56fc267cde95162a71bac39
+  Facebook-iOS-SDK: cd87f0b2f0c1d9574b44e8fa2baacc275524bac3
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+  Parse: 26354b8e2d22082f2aa95e7055c3254b91f27437
+  ParseFacebookUtils: 877130f8887ff55829344f2128247ff579a17616
+  ParseUI: 03fc6b0a15db10eecccf8140b658c35107111931
+  SWRevealViewController: 6d3fd97f70112fd7cef9de14df4260eacce4c63a
+
+COCOAPODS: 0.36.3

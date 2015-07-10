@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Biegaj dużo">
+    <meta name="author" content="Gamonie">
+
+	<title>Bieguś</title>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/dataTables.bootstrap.css">
+    <link rel="stylehseet" type="text/css" href="css/dataTables.responsive.css">
+	<link href="css/pagination.css" media="all" rel="stylesheet" type="text/css" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+	<script src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="js/parse-1.3.1.min.js"></script>
+	<script type="text/javascript" src="js/backbone-min.js"></script>
+	<script type="text/javascript" src="js/knockout-3.2.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout.mapping/2.4.1/knockout.mapping.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script src="js/dataTables.bootstrap.js"></script>
+    <script src="js/dataTables.responsive.js"></script>
+	<script src="js/Chart.js"></script>
+	
+
+	<script type="text/javascript" src="js/script.js"></script>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" style="color: #fff; font-size: 1.8em;" href="index.html">Bieguś</a>
+            </div>
+			<ul class="nav navbar-right top-nav">
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" id="username_dropdown" data-toggle="dropdown"></a>
+                    <ul class="dropdown-menu">
+                        <!-- <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-gear"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li> -->
+                        <li>
+                            <a id="user_logout" href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+			
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul style = "background-color: #fff" class="nav navbar-nav side-nav">
+                    <li>
+                        <a href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+                    </li>
+                    <li>
+                        <a href="#workout-table-container"><i class="fa fa-fw fa-bolt"></i> My Workouts</a>
+                    </li>
+                    <li>
+                        <a href="#statistics-container"><i class="fa fa-fw fa-dashboard"></i> My Statistics</a>
+                    </li>
+                    <li>
+                        <a href="#account-container"><i class="fa fa-fw fa-user"></i> My Account</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+			    <span class="glyphicon glyphicon-th-large"></span>
+                            Dashboard
+                        </h1>
+                    </div>
+					
+                </div>
+				
+					
+					
+					<div id="first-statistics-container" class="panel panel-default content-container" style="width:500px;"  data-bind="with: Workouts">
+						
+						<div class="panel-heading"><h2>Osiągi</h2></div>
+						<div class="panel-body">
+						<p>Twoje rekordy</p>
+						</div>
+						<table class="table">
+						<tbody>
+						<tr>
+						<td>Przebyty dystans</td><td data-bind="text: distance"></td>
+						</tr>
+						<tr><td>Spalonych kalorii</td><td data-bind="text: calories"></td></tr>
+						</tbody>
+						</table>
+					</div>
+					<div style="height: 10px; clear: both"></div>
+					
+					<div class="graph-container" >
+							<h2 class="form-signin-heading" style="width: 100%; position: absolute; display: inline-block">Moje dystanse</h2>
+						
+						<canvas id="myChart" style="margin-top: 7em" width="400" height="400"></canvas>
+					</div>
+					
+					<div class="graph-container" >
+							<h2 class="form-signin-heading" style="width: 100%; position: absolute; display: inline-block">Moje kalorie</h2>
+						
+						<canvas id="myChart2" width="400" height="400"></canvas>
+					</div>
+					
+					<div class="graph-container" >
+							<h2 class="form-signin-heading" style="width: 100%; position: absolute; display: inline-block">Mój czas</h2>
+						
+						<canvas id="myChart3" width="400" height="400"></canvas>
+					</div>
+					
+					<div style="height: 40px; clear: both"></div>
+					
+					<div id="workout-details-container" data-bind="with: WorkoutDetails" class="panel panel-default my-containers">
+					  <!-- Default panel contents -->
+						  <div class="panel-heading"><h2>Trening</h2></div>
+						  <div class="panel-body">
+							<p>Sprawdź szczegółowe dane swojego treningu</p>
+						  </div>
+						<table class="table">
+						<tbody>
+						<tr><td>Dyscyplina</td><td data-bind="text: type"></td><tr>
+						<tr><td>Czas</td><td data-bind="text: seconds"></td></tr>
+						<tr><td>Dystans</td><td data-bind="text: distance"></td></tr>
+						<tr><td>Spalonych kalorii</td><td data-bind="text: calories"></td></tr>
+						<tr><td>Maksymalna prędkość</td><td data-bind="text: maxSpeed"></td></tr>
+						<tr><td>Minimalna prędkość</td><td data-bind="text: minSpeed"></td></tr>
+						</tbody>
+						</table>
+						<div id="map-canvas" style="min-height: 20em; width: 100%; margin: auto;"></div>
+					</div>
+					
+					<div id="workout-table-container" class="panel panel-default my-containers"  data-bind="with: Workouts">
+					  <!-- Default panel contents -->
+					  <div class="panel-heading"><h2>Moje treningi</h2></div>
+					  <div class="panel-body">
+						<p>Wybierz trening z listy, aby zobaczyć jego szczegóły</p>
+					  </div>
+
+					  <!-- Table -->
+					  
+						<table class="table" id="workouts-table">
+						<thead>
+						<th>Dyscyplina</th>
+						<th>Kalorie (kcal)</th>
+						<th>Dystans (km)</th>
+						<th>Czas (s)</th>
+						</thead>
+						<tbody data-bind="foreach: workouts">
+							<tr data-bind="click: $parent.showDetails">
+							<td data-bind="text: type"></td>					
+							<td data-bind="text: calories"></td>					
+							<td data-bind="text: distance"></td>					
+							<td data-bind="text: seconds"></td>	
+							</tr>
+						</tbody>
+						</table>
+					</div>
+						
+					
+					<div id="statistics-container" class="panel panel-default my-containers" data-bind="with: DisciplineDetails">
+						
+						<div class="panel-heading"><h2>Mój rok</h2></div>
+						<div class="panel-body">
+						<p>Zobacz jak wyglądały twoje treningi w ostatnim roku</p>
+						</div>
+						<ul data-bind="foreach: disciplines" class="nav nav-tabs">
+							<li role="presentation" ><a href="#statistics-container" data-bind="text: $data, click: $parent.showDetails"></a></li>
+						</ul>
+						<div id="barchart-container" style="padding: 1em">
+							<h3>Dane dla dyscypliny - <span style="font-weight: light;" data-bind="text: selectedDisc"></span></h3>
+							<h4>Dystanse</h4>
+							<canvas id="barChart" style="width:60%; height: 300;"></canvas>
+							<h4>Kalorie</h4>
+							<canvas id="barChart2" style="width:60%; height: 300;"></canvas>
+							<h4>Czas</h4>
+							<canvas id="barChart3" style="width:60%; height: 300;"></canvas>
+						</div>
+					</div>
+
+				
+					<div id="account-container" class="panel panel-default content-container" style="width:500px;" >
+						<div class="panel-heading"><h2>Moje konto</h2></div>
+						<div class="panel-body">
+						<p>Zmień swoje dane</p>
+						</div>
+						<form class="form-signin" style="padding: 1em 2em;" id="user_edit_form" role="form">
+						<div>
+						<input id="inputEmail" class="form-control" placeholder="Email" required>
+						</div>
+						<button id = "submit-btn" class="btn btn-lg btn-primary btn-block" type="submit">Zapisz zmiany</button>
+						</form>
+					</div>
+				
+				
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+		<div style="height: 40px; clear: both"></div>
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery 
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+
+</body>
+
+</html>

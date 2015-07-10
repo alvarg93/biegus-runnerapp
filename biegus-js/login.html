@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Biegaj dużo">
+    <meta name="author" content="Gamonie">
+	<title>Bieguś</title>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/parse-1.3.1.min.js"></script>
+	<script type="text/javascript" src="js/backbone-min.js"></script>
+	<script type="text/javascript" src="js/knockout-3.2.0.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style-login.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+	<script type="text/javascript" src="js/facebook_login.js"></script>
+
+    <div id="wrapper">
+
+        <div id="page-wrapper">
+
+            <div class="container-fluid">
+                <!-- Page Heading -->
+                <div class="row">
+					<div class="login-container" style="background-color: #f2f2f2">
+						<form class="form-signin"  id="login_form" role="form">
+						<div class="form-header-container">
+							<h2 class="form-signin-heading">Zaloguj</h2>
+							<span class="glyphicon glyphicon-tasks"></span>
+							<p  style="background-color: #d2d2d2">
+									Zaloguj się do istniejącego konta
+							</p>
+						</div>
+						<input id="inputUsername" class="form-control" placeholder="Nazwa użytkownika" required>
+						<input type="password" id="inputPassword" class="form-control" placeholder="Hasło" required>
+						<button id = "submit-btn" class="btn btn-lg btn-primary btn-block" type="submit">Zaloguj</button>
+						</form>
+						<button id = "facebook-login-btn" class="btn btn-lg btn-primary btn-block" style="background-color: #3467d3;">Zaloguj przez Facebook</button>
+					</div>
+					
+					<div class="login-container" style="background-color: #f2f2f2" >
+						<form class="form-signin" id="register_form" role="form">
+						<div class="form-header-container">
+							<h2 class="form-signin-heading">Zarejestruj</h2>
+							<span class="glyphicon glyphicon-save"></span>
+							<div>
+								<p style="background-color: #d2d2d2">
+									Stwórz nowe konto
+								</p>
+							</div>
+						</div>
+						<input id="inputUsername" class="form-control" placeholder="Nazwa użytkownika" required>
+						<input id="inputEmail" class="form-control" placeholder="Email" required>
+						<input type="password" id="inputPassword" class="form-control" placeholder="Hasło" required>
+						<input type="password" id="inputPassword" class="form-control" placeholder="Powtórz hasło" required>
+						<button id = "submit-btn" class="btn btn-lg btn-primary btn-block" type="submit">Zarejestruj</button>
+						</form>
+					</div>
+                </div>
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+
+</body>
+
+</html>

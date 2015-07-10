@@ -1,0 +1,747 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08115AD41AF58823003C68B3 /* RunDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08115AD31AF58823003C68B3 /* RunDetailsViewController.m */; };
+		08115AD71AF5FD7A003C68B3 /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08115AD61AF5FD7A003C68B3 /* HistoryViewController.m */; };
+		08115ADA1AF602A7003C68B3 /* BGSMath.m in Sources */ = {isa = PBXBuildFile; fileRef = 08115AD91AF602A7003C68B3 /* BGSMath.m */; };
+		08152B261AEF645400671F43 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08152B251AEF645400671F43 /* MenuViewController.m */; };
+		08152B291AEF665D00671F43 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08152B281AEF665D00671F43 /* SettingsViewController.m */; };
+		081F5A401B23217400A099DD /* JBBarChartFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F5A321B23217400A099DD /* JBBarChartFooterView.m */; };
+		081F5A411B23217400A099DD /* JBBaseChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F5A341B23217400A099DD /* JBBaseChartViewController.m */; };
+		081F5A421B23217400A099DD /* JBBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F5A361B23217400A099DD /* JBBaseViewController.m */; };
+		081F5A431B23217400A099DD /* JBChartHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F5A381B23217400A099DD /* JBChartHeaderView.m */; };
+		081F5A441B23217400A099DD /* JBChartTooltipTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F5A3A1B23217400A099DD /* JBChartTooltipTipView.m */; };
+		081F5A451B23217400A099DD /* JBChartTooltipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F5A3C1B23217400A099DD /* JBChartTooltipView.m */; };
+		081F5A4D1B23219400A099DD /* JBBarChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F5A481B23219400A099DD /* JBBarChartView.m */; };
+		081F5A4E1B23219400A099DD /* JBChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F5A4A1B23219400A099DD /* JBChartView.m */; };
+		081F5A4F1B23219400A099DD /* JBLineChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 081F5A4C1B23219400A099DD /* JBLineChartView.m */; };
+		082258FE1B11B72A0030CA21 /* WeightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 082258FD1B11B72A0030CA21 /* WeightCell.xib */; };
+		082259011B11BB2C0030CA21 /* WeightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 082259001B11BB2C0030CA21 /* WeightCell.m */; };
+		084A04E91B2081E900E7EBF3 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 084A04E81B2081E900E7EBF3 /* Constants.m */; };
+		084A04EC1B20A85100E7EBF3 /* BGSStats.m in Sources */ = {isa = PBXBuildFile; fileRef = 084A04EB1B20A85100E7EBF3 /* BGSStats.m */; };
+		084A04F01B20CDF200E7EBF3 /* StatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 084A04EE1B20CCB300E7EBF3 /* StatisticsViewController.m */; };
+		084D57381AF810EC0005ED54 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084D57351AF810EC0005ED54 /* FBSDKCoreKit.framework */; };
+		084D57391AF810EC0005ED54 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084D57361AF810EC0005ED54 /* FBSDKLoginKit.framework */; };
+		084D573A1AF810EC0005ED54 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 084D57371AF810EC0005ED54 /* FBSDKShareKit.framework */; };
+		086FBF091B12449C0092F984 /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 086FBF081B12449C0092F984 /* LoginController.m */; };
+		086FBF0F1B1245520092F984 /* MyPFLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 086FBF0E1B1245520092F984 /* MyPFLogInViewController.m */; };
+		086FBF121B1245690092F984 /* MyPFSignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 086FBF111B1245690092F984 /* MyPFSignUpViewController.m */; };
+		0892D64C1B0334E900F81AC8 /* BGSMapUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0892D64B1B0334E900F81AC8 /* BGSMapUtils.m */; };
+		08A6B5751B1A233000FC5967 /* SelectSportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A6B5741B1A233000FC5967 /* SelectSportViewController.m */; };
+		08D3F2531AD7376200BE7F87 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D3F2521AD7376200BE7F87 /* main.m */; };
+		08D3F2561AD7376200BE7F87 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D3F2551AD7376200BE7F87 /* AppDelegate.m */; };
+		08D3F2591AD7376200BE7F87 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D3F2581AD7376200BE7F87 /* ViewController.m */; };
+		08D3F25C1AD7376200BE7F87 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08D3F25A1AD7376200BE7F87 /* Main.storyboard */; };
+		08D3F25E1AD7376200BE7F87 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08D3F25D1AD7376200BE7F87 /* Images.xcassets */; };
+		08D3F2611AD7376200BE7F87 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08D3F25F1AD7376200BE7F87 /* LaunchScreen.xib */; };
+		08D3F26D1AD7376300BE7F87 /* biegus_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08D3F26C1AD7376300BE7F87 /* biegus_iOSTests.m */; };
+		08DC1AEA1AF6CD9900DD0C23 /* HistoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DC1AE91AF6CD9900DD0C23 /* HistoryCell.m */; };
+		08E79CC21AF895A30095E081 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E79CC11AF895A30095E081 /* Accounts.framework */; };
+		08E79CC41AF895A80095E081 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08E79CC31AF895A80095E081 /* Social.framework */; };
+		08F5733E1AE9739A00822123 /* CALayer+XibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F5733D1AE9739A00822123 /* CALayer+XibConfiguration.m */; };
+		08F573401AE9744700822123 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08F5733F1AE9744700822123 /* MapKit.framework */; };
+		08F573431AE978EC00822123 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F573421AE978EC00822123 /* LocationManager.m */; };
+		C7E22C361F18F381EB1414DB /* libPods-biegus-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E0C2E837ACE7EB2C930BD88F /* libPods-biegus-iOS.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08D3F2671AD7376200BE7F87 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08D3F2451AD7376200BE7F87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08D3F24C1AD7376200BE7F87;
+			remoteInfo = "biegus-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08115AD21AF58823003C68B3 /* RunDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunDetailsViewController.h; sourceTree = "<group>"; };
+		08115AD31AF58823003C68B3 /* RunDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunDetailsViewController.m; sourceTree = "<group>"; };
+		08115AD51AF5FD7A003C68B3 /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		08115AD61AF5FD7A003C68B3 /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		08115AD81AF602A7003C68B3 /* BGSMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGSMath.h; sourceTree = "<group>"; };
+		08115AD91AF602A7003C68B3 /* BGSMath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGSMath.m; sourceTree = "<group>"; };
+		08152B241AEF645400671F43 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		08152B251AEF645400671F43 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		08152B271AEF665D00671F43 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		08152B281AEF665D00671F43 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		081F5A311B23217400A099DD /* JBBarChartFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBBarChartFooterView.h; sourceTree = "<group>"; };
+		081F5A321B23217400A099DD /* JBBarChartFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBBarChartFooterView.m; sourceTree = "<group>"; };
+		081F5A331B23217400A099DD /* JBBaseChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBBaseChartViewController.h; sourceTree = "<group>"; };
+		081F5A341B23217400A099DD /* JBBaseChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBBaseChartViewController.m; sourceTree = "<group>"; };
+		081F5A351B23217400A099DD /* JBBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBBaseViewController.h; sourceTree = "<group>"; };
+		081F5A361B23217400A099DD /* JBBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBBaseViewController.m; sourceTree = "<group>"; };
+		081F5A371B23217400A099DD /* JBChartHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBChartHeaderView.h; sourceTree = "<group>"; };
+		081F5A381B23217400A099DD /* JBChartHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBChartHeaderView.m; sourceTree = "<group>"; };
+		081F5A391B23217400A099DD /* JBChartTooltipTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBChartTooltipTipView.h; sourceTree = "<group>"; };
+		081F5A3A1B23217400A099DD /* JBChartTooltipTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBChartTooltipTipView.m; sourceTree = "<group>"; };
+		081F5A3B1B23217400A099DD /* JBChartTooltipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBChartTooltipView.h; sourceTree = "<group>"; };
+		081F5A3C1B23217400A099DD /* JBChartTooltipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBChartTooltipView.m; sourceTree = "<group>"; };
+		081F5A3D1B23217400A099DD /* JBColorConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBColorConstants.h; sourceTree = "<group>"; };
+		081F5A3E1B23217400A099DD /* JBConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBConstants.h; sourceTree = "<group>"; };
+		081F5A3F1B23217400A099DD /* JBFontConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBFontConstants.h; sourceTree = "<group>"; };
+		081F5A471B23219400A099DD /* JBBarChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBBarChartView.h; sourceTree = "<group>"; };
+		081F5A481B23219400A099DD /* JBBarChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBBarChartView.m; sourceTree = "<group>"; };
+		081F5A491B23219400A099DD /* JBChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBChartView.h; sourceTree = "<group>"; };
+		081F5A4A1B23219400A099DD /* JBChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBChartView.m; sourceTree = "<group>"; };
+		081F5A4B1B23219400A099DD /* JBLineChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JBLineChartView.h; sourceTree = "<group>"; };
+		081F5A4C1B23219400A099DD /* JBLineChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JBLineChartView.m; sourceTree = "<group>"; };
+		082258FD1B11B72A0030CA21 /* WeightCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeightCell.xib; sourceTree = "<group>"; };
+		082258FF1B11BB2C0030CA21 /* WeightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeightCell.h; sourceTree = "<group>"; };
+		082259001B11BB2C0030CA21 /* WeightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeightCell.m; sourceTree = "<group>"; };
+		084A04E71B2081E900E7EBF3 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		084A04E81B2081E900E7EBF3 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		084A04EA1B20A85100E7EBF3 /* BGSStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGSStats.h; sourceTree = "<group>"; };
+		084A04EB1B20A85100E7EBF3 /* BGSStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGSStats.m; sourceTree = "<group>"; };
+		084A04ED1B20CCB300E7EBF3 /* StatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticsViewController.h; sourceTree = "<group>"; };
+		084A04EE1B20CCB300E7EBF3 /* StatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticsViewController.m; sourceTree = "<group>"; };
+		084D57351AF810EC0005ED54 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		084D57361AF810EC0005ED54 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		084D57371AF810EC0005ED54 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../../../Documents/FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		086FBF071B12449C0092F984 /* LoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		086FBF081B12449C0092F984 /* LoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		086FBF0D1B1245520092F984 /* MyPFLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPFLogInViewController.h; sourceTree = "<group>"; };
+		086FBF0E1B1245520092F984 /* MyPFLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPFLogInViewController.m; sourceTree = "<group>"; };
+		086FBF101B1245690092F984 /* MyPFSignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPFSignUpViewController.h; sourceTree = "<group>"; };
+		086FBF111B1245690092F984 /* MyPFSignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPFSignUpViewController.m; sourceTree = "<group>"; };
+		0892D64A1B0334E900F81AC8 /* BGSMapUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BGSMapUtils.h; sourceTree = "<group>"; };
+		0892D64B1B0334E900F81AC8 /* BGSMapUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BGSMapUtils.m; sourceTree = "<group>"; };
+		08A6B5731B1A233000FC5967 /* SelectSportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectSportViewController.h; sourceTree = "<group>"; };
+		08A6B5741B1A233000FC5967 /* SelectSportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectSportViewController.m; sourceTree = "<group>"; };
+		08D3F24D1AD7376200BE7F87 /* biegus-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "biegus-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08D3F2511AD7376200BE7F87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08D3F2521AD7376200BE7F87 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		08D3F2541AD7376200BE7F87 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		08D3F2551AD7376200BE7F87 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		08D3F2571AD7376200BE7F87 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		08D3F2581AD7376200BE7F87 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		08D3F25B1AD7376200BE7F87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08D3F25D1AD7376200BE7F87 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		08D3F2601AD7376200BE7F87 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		08D3F2661AD7376200BE7F87 /* biegus-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "biegus-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08D3F26B1AD7376200BE7F87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08D3F26C1AD7376300BE7F87 /* biegus_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = biegus_iOSTests.m; sourceTree = "<group>"; };
+		08DC1AE81AF6CD9900DD0C23 /* HistoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryCell.h; sourceTree = "<group>"; };
+		08DC1AE91AF6CD9900DD0C23 /* HistoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryCell.m; sourceTree = "<group>"; };
+		08E79CC11AF895A30095E081 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		08E79CC31AF895A80095E081 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		08F5733C1AE9739A00822123 /* CALayer+XibConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+XibConfiguration.h"; sourceTree = "<group>"; };
+		08F5733D1AE9739A00822123 /* CALayer+XibConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+XibConfiguration.m"; sourceTree = "<group>"; };
+		08F5733F1AE9744700822123 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		08F573411AE978EC00822123 /* LocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationManager.h; sourceTree = "<group>"; };
+		08F573421AE978EC00822123 /* LocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationManager.m; sourceTree = "<group>"; };
+		472846D60A46BE2F24E3FB28 /* Pods-biegus-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-biegus-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-biegus-iOS/Pods-biegus-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		66FC50F3905FF6CD6E4D276F /* Pods-biegus-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-biegus-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-biegus-iOS/Pods-biegus-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		E0C2E837ACE7EB2C930BD88F /* libPods-biegus-iOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-biegus-iOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08D3F24A1AD7376200BE7F87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E79CC41AF895A80095E081 /* Social.framework in Frameworks */,
+				08E79CC21AF895A30095E081 /* Accounts.framework in Frameworks */,
+				08F573401AE9744700822123 /* MapKit.framework in Frameworks */,
+				084D57381AF810EC0005ED54 /* FBSDKCoreKit.framework in Frameworks */,
+				084D573A1AF810EC0005ED54 /* FBSDKShareKit.framework in Frameworks */,
+				084D57391AF810EC0005ED54 /* FBSDKLoginKit.framework in Frameworks */,
+				C7E22C361F18F381EB1414DB /* libPods-biegus-iOS.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08D3F2631AD7376200BE7F87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		081F5A461B23217B00A099DD /* JBChart */ = {
+			isa = PBXGroup;
+			children = (
+				081F5A471B23219400A099DD /* JBBarChartView.h */,
+				081F5A481B23219400A099DD /* JBBarChartView.m */,
+				081F5A491B23219400A099DD /* JBChartView.h */,
+				081F5A4A1B23219400A099DD /* JBChartView.m */,
+				081F5A4B1B23219400A099DD /* JBLineChartView.h */,
+				081F5A4C1B23219400A099DD /* JBLineChartView.m */,
+				081F5A311B23217400A099DD /* JBBarChartFooterView.h */,
+				081F5A321B23217400A099DD /* JBBarChartFooterView.m */,
+				081F5A331B23217400A099DD /* JBBaseChartViewController.h */,
+				081F5A341B23217400A099DD /* JBBaseChartViewController.m */,
+				081F5A351B23217400A099DD /* JBBaseViewController.h */,
+				081F5A361B23217400A099DD /* JBBaseViewController.m */,
+				081F5A371B23217400A099DD /* JBChartHeaderView.h */,
+				081F5A381B23217400A099DD /* JBChartHeaderView.m */,
+				081F5A391B23217400A099DD /* JBChartTooltipTipView.h */,
+				081F5A3A1B23217400A099DD /* JBChartTooltipTipView.m */,
+				081F5A3B1B23217400A099DD /* JBChartTooltipView.h */,
+				081F5A3C1B23217400A099DD /* JBChartTooltipView.m */,
+				081F5A3D1B23217400A099DD /* JBColorConstants.h */,
+				081F5A3E1B23217400A099DD /* JBConstants.h */,
+				081F5A3F1B23217400A099DD /* JBFontConstants.h */,
+			);
+			name = JBChart;
+			sourceTree = "<group>";
+		};
+		082258F81B11B4690030CA21 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				08F573411AE978EC00822123 /* LocationManager.h */,
+				08F573421AE978EC00822123 /* LocationManager.m */,
+				08115AD81AF602A7003C68B3 /* BGSMath.h */,
+				08115AD91AF602A7003C68B3 /* BGSMath.m */,
+				0892D64A1B0334E900F81AC8 /* BGSMapUtils.h */,
+				0892D64B1B0334E900F81AC8 /* BGSMapUtils.m */,
+				086FBF071B12449C0092F984 /* LoginController.h */,
+				086FBF081B12449C0092F984 /* LoginController.m */,
+				084A04EA1B20A85100E7EBF3 /* BGSStats.h */,
+				084A04EB1B20A85100E7EBF3 /* BGSStats.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		082258F91B11B47B0030CA21 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				08D3F2571AD7376200BE7F87 /* ViewController.h */,
+				08D3F2581AD7376200BE7F87 /* ViewController.m */,
+				08152B241AEF645400671F43 /* MenuViewController.h */,
+				08152B251AEF645400671F43 /* MenuViewController.m */,
+				08152B271AEF665D00671F43 /* SettingsViewController.h */,
+				08152B281AEF665D00671F43 /* SettingsViewController.m */,
+				08115AD21AF58823003C68B3 /* RunDetailsViewController.h */,
+				08115AD31AF58823003C68B3 /* RunDetailsViewController.m */,
+				08115AD51AF5FD7A003C68B3 /* HistoryViewController.h */,
+				08115AD61AF5FD7A003C68B3 /* HistoryViewController.m */,
+				086FBF0D1B1245520092F984 /* MyPFLogInViewController.h */,
+				086FBF0E1B1245520092F984 /* MyPFLogInViewController.m */,
+				086FBF101B1245690092F984 /* MyPFSignUpViewController.h */,
+				086FBF111B1245690092F984 /* MyPFSignUpViewController.m */,
+				08A6B5731B1A233000FC5967 /* SelectSportViewController.h */,
+				08A6B5741B1A233000FC5967 /* SelectSportViewController.m */,
+				084A04ED1B20CCB300E7EBF3 /* StatisticsViewController.h */,
+				084A04EE1B20CCB300E7EBF3 /* StatisticsViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		082258FA1B11B4860030CA21 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				08F5733C1AE9739A00822123 /* CALayer+XibConfiguration.h */,
+				08F5733D1AE9739A00822123 /* CALayer+XibConfiguration.m */,
+				084A04E71B2081E900E7EBF3 /* Constants.h */,
+				084A04E81B2081E900E7EBF3 /* Constants.m */,
+				081F5A461B23217B00A099DD /* JBChart */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		082258FB1B11B48E0030CA21 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				08DC1AE81AF6CD9900DD0C23 /* HistoryCell.h */,
+				08DC1AE91AF6CD9900DD0C23 /* HistoryCell.m */,
+				082258FF1B11BB2C0030CA21 /* WeightCell.h */,
+				082259001B11BB2C0030CA21 /* WeightCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		082258FC1B11B7100030CA21 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				08D3F25A1AD7376200BE7F87 /* Main.storyboard */,
+				08D3F25F1AD7376200BE7F87 /* LaunchScreen.xib */,
+				082258FD1B11B72A0030CA21 /* WeightCell.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+		08D3F2441AD7376200BE7F87 = {
+			isa = PBXGroup;
+			children = (
+				08F5733F1AE9744700822123 /* MapKit.framework */,
+				08D3F24F1AD7376200BE7F87 /* biegus-iOS */,
+				08D3F2691AD7376200BE7F87 /* biegus-iOSTests */,
+				08D3F24E1AD7376200BE7F87 /* Products */,
+				81D5EA9FF99CD82044075274 /* Pods */,
+				DFBCEE50D19DBE956E725414 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		08D3F24E1AD7376200BE7F87 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08D3F24D1AD7376200BE7F87 /* biegus-iOS.app */,
+				08D3F2661AD7376200BE7F87 /* biegus-iOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08D3F24F1AD7376200BE7F87 /* biegus-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				08D3F2541AD7376200BE7F87 /* AppDelegate.h */,
+				08D3F2551AD7376200BE7F87 /* AppDelegate.m */,
+				082258FB1B11B48E0030CA21 /* Cells */,
+				082258FA1B11B4860030CA21 /* Helpers */,
+				082258F81B11B4690030CA21 /* Utilities */,
+				082258F91B11B47B0030CA21 /* View Controllers */,
+				08D3F2501AD7376200BE7F87 /* Supporting Files */,
+				082258FC1B11B7100030CA21 /* XIBs */,
+			);
+			path = "biegus-iOS";
+			sourceTree = "<group>";
+		};
+		08D3F2501AD7376200BE7F87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08D3F25D1AD7376200BE7F87 /* Images.xcassets */,
+				08D3F2511AD7376200BE7F87 /* Info.plist */,
+				08D3F2521AD7376200BE7F87 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		08D3F2691AD7376200BE7F87 /* biegus-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				08D3F26C1AD7376300BE7F87 /* biegus_iOSTests.m */,
+				08D3F26A1AD7376200BE7F87 /* Supporting Files */,
+			);
+			path = "biegus-iOSTests";
+			sourceTree = "<group>";
+		};
+		08D3F26A1AD7376200BE7F87 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08D3F26B1AD7376200BE7F87 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		81D5EA9FF99CD82044075274 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				472846D60A46BE2F24E3FB28 /* Pods-biegus-iOS.debug.xcconfig */,
+				66FC50F3905FF6CD6E4D276F /* Pods-biegus-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DFBCEE50D19DBE956E725414 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08E79CC31AF895A80095E081 /* Social.framework */,
+				08E79CC11AF895A30095E081 /* Accounts.framework */,
+				084D57351AF810EC0005ED54 /* FBSDKCoreKit.framework */,
+				084D57361AF810EC0005ED54 /* FBSDKLoginKit.framework */,
+				084D57371AF810EC0005ED54 /* FBSDKShareKit.framework */,
+				E0C2E837ACE7EB2C930BD88F /* libPods-biegus-iOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08D3F24C1AD7376200BE7F87 /* biegus-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08D3F2701AD7376300BE7F87 /* Build configuration list for PBXNativeTarget "biegus-iOS" */;
+			buildPhases = (
+				4708179D3E0FC2C1F61AD6AC /* Check Pods Manifest.lock */,
+				08D3F2491AD7376200BE7F87 /* Sources */,
+				08D3F24A1AD7376200BE7F87 /* Frameworks */,
+				08D3F24B1AD7376200BE7F87 /* Resources */,
+				24D19C6511012DD1AFB45D3C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "biegus-iOS";
+			productName = "biegus-iOS";
+			productReference = 08D3F24D1AD7376200BE7F87 /* biegus-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08D3F2651AD7376200BE7F87 /* biegus-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08D3F2731AD7376300BE7F87 /* Build configuration list for PBXNativeTarget "biegus-iOSTests" */;
+			buildPhases = (
+				08D3F2621AD7376200BE7F87 /* Sources */,
+				08D3F2631AD7376200BE7F87 /* Frameworks */,
+				08D3F2641AD7376200BE7F87 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08D3F2681AD7376200BE7F87 /* PBXTargetDependency */,
+			);
+			name = "biegus-iOSTests";
+			productName = "biegus-iOSTests";
+			productReference = 08D3F2661AD7376200BE7F87 /* biegus-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08D3F2451AD7376200BE7F87 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Krystian & Romek";
+				TargetAttributes = {
+					08D3F24C1AD7376200BE7F87 = {
+						CreatedOnToolsVersion = 6.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					08D3F2651AD7376200BE7F87 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 08D3F24C1AD7376200BE7F87;
+					};
+				};
+			};
+			buildConfigurationList = 08D3F2481AD7376200BE7F87 /* Build configuration list for PBXProject "biegus-iOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08D3F2441AD7376200BE7F87;
+			productRefGroup = 08D3F24E1AD7376200BE7F87 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08D3F24C1AD7376200BE7F87 /* biegus-iOS */,
+				08D3F2651AD7376200BE7F87 /* biegus-iOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08D3F24B1AD7376200BE7F87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08D3F25C1AD7376200BE7F87 /* Main.storyboard in Resources */,
+				082258FE1B11B72A0030CA21 /* WeightCell.xib in Resources */,
+				08D3F2611AD7376200BE7F87 /* LaunchScreen.xib in Resources */,
+				08D3F25E1AD7376200BE7F87 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08D3F2641AD7376200BE7F87 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		24D19C6511012DD1AFB45D3C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-biegus-iOS/Pods-biegus-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4708179D3E0FC2C1F61AD6AC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08D3F2491AD7376200BE7F87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081F5A431B23217400A099DD /* JBChartHeaderView.m in Sources */,
+				084A04F01B20CDF200E7EBF3 /* StatisticsViewController.m in Sources */,
+				081F5A4F1B23219400A099DD /* JBLineChartView.m in Sources */,
+				08F5733E1AE9739A00822123 /* CALayer+XibConfiguration.m in Sources */,
+				08152B261AEF645400671F43 /* MenuViewController.m in Sources */,
+				08115AD71AF5FD7A003C68B3 /* HistoryViewController.m in Sources */,
+				081F5A451B23217400A099DD /* JBChartTooltipView.m in Sources */,
+				082259011B11BB2C0030CA21 /* WeightCell.m in Sources */,
+				081F5A421B23217400A099DD /* JBBaseViewController.m in Sources */,
+				086FBF0F1B1245520092F984 /* MyPFLogInViewController.m in Sources */,
+				084A04EC1B20A85100E7EBF3 /* BGSStats.m in Sources */,
+				08F573431AE978EC00822123 /* LocationManager.m in Sources */,
+				08A6B5751B1A233000FC5967 /* SelectSportViewController.m in Sources */,
+				086FBF121B1245690092F984 /* MyPFSignUpViewController.m in Sources */,
+				08D3F2591AD7376200BE7F87 /* ViewController.m in Sources */,
+				08DC1AEA1AF6CD9900DD0C23 /* HistoryCell.m in Sources */,
+				081F5A4D1B23219400A099DD /* JBBarChartView.m in Sources */,
+				081F5A441B23217400A099DD /* JBChartTooltipTipView.m in Sources */,
+				081F5A4E1B23219400A099DD /* JBChartView.m in Sources */,
+				081F5A401B23217400A099DD /* JBBarChartFooterView.m in Sources */,
+				086FBF091B12449C0092F984 /* LoginController.m in Sources */,
+				0892D64C1B0334E900F81AC8 /* BGSMapUtils.m in Sources */,
+				08D3F2561AD7376200BE7F87 /* AppDelegate.m in Sources */,
+				08115ADA1AF602A7003C68B3 /* BGSMath.m in Sources */,
+				08D3F2531AD7376200BE7F87 /* main.m in Sources */,
+				081F5A411B23217400A099DD /* JBBaseChartViewController.m in Sources */,
+				08152B291AEF665D00671F43 /* SettingsViewController.m in Sources */,
+				08115AD41AF58823003C68B3 /* RunDetailsViewController.m in Sources */,
+				084A04E91B2081E900E7EBF3 /* Constants.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08D3F2621AD7376200BE7F87 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08D3F26D1AD7376300BE7F87 /* biegus_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08D3F2681AD7376200BE7F87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08D3F24C1AD7376200BE7F87 /* biegus-iOS */;
+			targetProxy = 08D3F2671AD7376200BE7F87 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08D3F25A1AD7376200BE7F87 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08D3F25B1AD7376200BE7F87 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		08D3F25F1AD7376200BE7F87 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08D3F2601AD7376200BE7F87 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08D3F26E1AD7376300BE7F87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		08D3F26F1AD7376300BE7F87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08D3F2711AD7376300BE7F87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 472846D60A46BE2F24E3FB28 /* Pods-biegus-iOS.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/krystian/Documents/FacebookSDK,
+				);
+				INFOPLIST_FILE = "biegus-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		08D3F2721AD7376300BE7F87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66FC50F3905FF6CD6E4D276F /* Pods-biegus-iOS.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/krystian/Documents/FacebookSDK,
+				);
+				INFOPLIST_FILE = "biegus-iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		08D3F2741AD7376300BE7F87 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "biegus-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/biegus-iOS.app/biegus-iOS";
+			};
+			name = Debug;
+		};
+		08D3F2751AD7376300BE7F87 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "biegus-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/biegus-iOS.app/biegus-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08D3F2481AD7376200BE7F87 /* Build configuration list for PBXProject "biegus-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08D3F26E1AD7376300BE7F87 /* Debug */,
+				08D3F26F1AD7376300BE7F87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08D3F2701AD7376300BE7F87 /* Build configuration list for PBXNativeTarget "biegus-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08D3F2711AD7376300BE7F87 /* Debug */,
+				08D3F2721AD7376300BE7F87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08D3F2731AD7376300BE7F87 /* Build configuration list for PBXNativeTarget "biegus-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08D3F2741AD7376300BE7F87 /* Debug */,
+				08D3F2751AD7376300BE7F87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08D3F2451AD7376200BE7F87 /* Project object */;
+}
